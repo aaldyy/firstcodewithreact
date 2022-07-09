@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar';
+import Router from './router';
+// import Random from './views/Random';
+// import Soal from './views/Soal'
+// import Persamaan from './views/Persamaan'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div >
+      <Navbar />           
+        <div className="py-4" >        
+        <Router />
+        </div>
+
     </div>
   );
 }
